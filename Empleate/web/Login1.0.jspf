@@ -1,0 +1,86 @@
+<%-- any content can be specified here e.g.: --%>
+<%@ page pageEncoding="UTF-8" %>
+
+  
+<!-- Modal Structure -->
+<div id="Log" class="modal">
+    <div class="modal-content">
+        <form action="javascript:validateLogin();" method="post" class="col s12">
+            <div class="row">
+                <div class= "col s12"><h4>Bienvenido a Empleate</h4></div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12">
+                    <input name ="username" id="userN" type="text" class="validate">
+                    <label for="username">username</label>
+                </div>
+            </div>  
+            <div class="row">
+                <div class="input-field col s12" data-validate="Enter password">
+                    <span class="btn-show-pass">
+                    <i class="zmdi zmdi-eye"></i>
+                    </span>
+                    <input name="password" id="key" type="password" class="validate">
+                    <label for="password" color="white">Password</label>
+                </div>
+            </div>
+            <div class="input-field col s12">
+                <div class="container-login100-form-btn">
+                <div class="wrap-login100-form-btn">
+                        <div class="login100-form-bgbtn"></div>
+                        <button class="login100-form-btn">
+                                Login
+                        </button>
+                </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<div id="dropDownSelect1"></div>
+	
+<!--===============================================================================================-->
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/animsition/js/animsition.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/daterangepicker/moment.min.js"></script>
+	<script src="vendor/daterangepicker/daterangepicker.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/countdowntime/countdowntime.js"></script>
+<!--===============================================================================================-->
+	<script src="js/main.js"></script>
+<style>
+    .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 450px;
+    height: 4750px;
+    background-color:#53167db3;
+    opacity: 0.2;
+    overflow: auto; /* Enable scroll if needed */
+    color:#ffffff;
+}
+
+.input-field label{
+  color:black;
+}
+
+.btn{
+    text-align:center;
+}
+.modal.open{
+    background-color:#53167dcc;
+    border-radius: 15px;
+    width: 450px;
+    height: 500px;
+}
+</style>

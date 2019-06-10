@@ -1,0 +1,50 @@
+<%-- any content can be specified here e.g.: --%>
+<%@ page pageEncoding="UTF-8" %>
+<%@include file="Login1.0.jspf"%>
+<%@include file="registroSelector.jspf"%>
+<div class="header1">
+  <div class="titulo1">
+      <h1 id="h1"><a href="Home" id="h1"><b>Empleate</b> <br> Busque su lugar!</a></h1>
+      <!--h2 id="h2"><a href="Home" id="h2">Busque su lugar!</a></h2-->
+  </div>
+  <div class="test">
+      
+  </div>
+</div>
+
+<style media="screen">
+.header1{
+  background-color: #1e0233;
+  color:white;
+  align:left;
+}
+.test{display: inline;}
+.nav-wrapper{
+  background-color: #1e0233;
+}
+.titulo1{
+  display: block;
+}
+
+.btn{
+    background-color: white;
+    color:#1e0233;
+}
+.titulo h1,.titulo h2{
+    text-decoration: none;
+    color: white;
+}
+input[type=text]{
+    color: white;
+}
+#h1{
+   font-family:'Helvetica Neue', sans-serif;; 
+    font-size: 20px!important;
+    color:#ffffff;
+    display: contents;
+}
+#h2{
+    font-family:'Helvetica Neue', sans-serif;;
+    font-size: 50px;
+}
+</style>
